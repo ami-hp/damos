@@ -1,0 +1,288 @@
+::-webkit-scrollbar {
+    width:5px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.profile-content::-webkit-scrollbar {
+    width:5px;
+}
+.profile-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.profile-content::-webkit-scrollbar-thumb {
+    background: #ff786b;
+}
+.profile-content::-webkit-scrollbar-thumb:hover {
+    background: #4F5269;
+}
+
+/*plus and minus start*/
+.minus, .plus{
+    border-radius:4px;
+    padding:8px 5px 8px 5px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+/*brand slider index end*/
+
+.swiper-container,.swiper-news:not(.swiper-article) {
+    width: 100%;
+    height: 100%;
+}
+.swiper-article {
+    width: 100%;
+}
+.swiper-port {
+    width: 240px;
+    height: 400px;
+}
+.swiper-tabs {
+    width: 100%;
+    height: 40px;
+}
+.swiper-port-box{
+    height: calc(100% - 280px);
+    overflow: hidden;
+}
+.swiper-slide {
+    text-align: right;
+    height: 100%;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide.no-align{
+    align-items: unset;
+    -webkit-align-items: unset;
+}
+[data-index] .swiper-slide{
+    padding-top: 120px;
+}
+
+.swiper-port .swiper-slide{
+    height: 150px!important;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number],input[type=search] {
+    -moz-appearance: textfield;
+}
+
+.file-input {
+    color: transparent;
+    width: 80px;
+    height: 30px;
+}
+.file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.file-input::before {
+    content: 'فایل ضمیمه';
+    color: black;
+    display: inline-block;
+    background: transparent;
+    border: 1px solid #ff786b;
+    border-radius: 5px;
+    padding: 6px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+.file-input:hover::before {
+    border-color: black;
+}
+.file-input:active {
+    outline: 0;
+}
+.file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+img, button ,a{
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-app-region: no-drag;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/*for search*/
+.si{
+  color:yellow;
+}
+
+
+
+/*video.js*/
+video{
+    object-fit: fill!important;
+}
+video button:focus,.video-js button:focus{
+    outline: 0!important;
+}
+.my-video-dimensions{
+    width: 100%!important;
+    height: auto!important;
+}
+.video-js .vjs-tech{
+    position: relative!important;
+    height: unset!important;
+}
+/* Player Skin Designer for Video.js http://videojs.com To customize the player skin edit the CSS below. Click "details" below to add comments or questions. This file uses some SCSS. Learn more at http://sass-lang.com/guide) This designer can be linked to at: https://codepen.io/heff/pen/EarCt/left/?editors=010 */
+.video-js {
+    overflow: hidden;
+    border-radius: 20px;
+}
+/* Player Skin Designer for Video.js http://videojs.com To customize the player skin edit the CSS below. Click "details" below to add comments or questions. This file uses some SCSS. Learn more at http://sass-lang.com/guide) This designer can be linked to at: https://codepen.io/heff/pen/EarCt/left/?editors=010 */
+.video-js {
+    /* The base font size controls the size of everything, not just text. All dimensions use em-based sizes so that the scale along with the font size. Try increasing it to 15px and see what happens. */
+    font-size: 10px!important;
+    /* The main font color changes the ICON COLORS as well as the text */
+    color: #fff!important;
+}
+/* The "Big Play Button" is the play button that shows before the video plays. To center it set the align values to center and middle. The typical location of the button is the center, but there is trend towards moving it to a corner where it gets out of the way of valuable content in the poster image.*/
+.vjs-big-play-button {
+    /* The font size is what makes the big play button...big. All width/height values use ems, which are a multiple of the font size. If the .video-js font-size is 10px, then 3em equals 30px.*/
+    font-size: 3em!important;
+    /* We're using SCSS vars here because the values are used in multiple places. Now that font size is set, the following em values will be a multiple of the new font size. If the font-size is 3em (30px), then setting any of the following values to 3em would equal 30px. 3 * font-size. */
+    /* 1.5em = 45px default */
+    line-height: 2em!important;
+    height: 2em!important;
+    width: 2em!important;
+    /* 0.06666em = 2px default */
+    border: 0!important;
+    /* 0.3em = 9px default */
+    border-radius: 50%!important;
+    /* Align center */
+    left: 50%!important;
+    top: 50%!important;
+    margin-left: -1em!important;
+    margin-top: -1em!important;
+    -webkit-box-shadow: 0px 0px 30px 13px var(--color-mos);
+    -moz-box-shadow: 0px 0px 30px 13px var(--color-mos);
+    box-shadow: 0px 0px 30px 13px var(--color-mos);
+}
+/* The default color of control backgrounds is mostly black but with a little bit of blue so it can still be seen on all-black video frames, which are common. */
+.video-js .vjs-control-bar, .video-js .vjs-menu-button .vjs-menu-content {
+    /* IE8 - has no alpha support */
+    background-color: #4f5269!important;
+}
+.video-js .vjs-big-play-button {
+    /* IE8 - has no alpha support */
+    background-color: #ff786b!important;
+}
+/* Slider - used for Volume bar and Progress bar */
+.video-js .vjs-slider {
+    background-color: #a5a8bb!important;
+    background-color: rgba(165, 168, 187, 0.5)!important;
+}
+/* The slider bar color is used for the progress bar and the volume bar (the first two can be removed after a fix that's coming) */
+.video-js .vjs-volume-level, .video-js .vjs-play-progress, .video-js .vjs-slider-bar {
+    background: #fff!important;
+}
+/* The main progress bar also has a bar that shows how much has been loaded. */
+.video-js .vjs-load-progress {
+    /* For IE8 we'll lighten the color */
+    background: #eeeef2!important;
+    /* Otherwise we'll rely on stacked opacities */
+    background: rgba(165, 168, 187, 0.5)!important;
+}
+/* The load progress bar also has internal divs that represent smaller disconnected loaded time ranges */
+.video-js .vjs-load-progress div {
+    /* For IE8 we'll lighten the color */
+    background: #fff!important;
+    /* Otherwise we'll rely on stacked opacities */
+    background: rgba(165, 168, 187, 0.75)!important;
+}
+
+
+/*lightbox*/
+.-fx-image-gal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%; /* arbitrary valye */
+    margin: 0 auto;
+}
+
+.-fx-gal-item {
+    width: 100%; /* for 3 columns */
+border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.-fx-gal-image-thumb img {
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /*filter: opacity(40%);*/
+}
+
+.-fx-gal-image-thumb:hover img {
+    width: 100%;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+    /*filter: opacity(100%);*/
+}
+.-fx-gal-image-thumb:focus{
+    outline: 0!important;
+    border: 0!important;
+}
+
+.-fx-gal-image-thumb:focus + .-fx-gal-image-big {
+    display: block;
+}
+.-fx-gal-image-big {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(5, 10, 15, 0.8);
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    z-index: 3030;
+    transition: all 0.3s ease;
+}
+
+.-fx-gal-image-big img {
+    max-width: 45%;
+    position: absolute;
+    box-shadow: 0px 0px 800px 40px rgba(0, 0, 0, 0.9);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 100%;
+}
+/*animation*/
