@@ -106,26 +106,30 @@ $(document).ready(function() {
 
     }
 /*---------video.js----------*/
-    var player = videojs('my-video', {
-        controls: true,
-        autoplay: false,
-        preload: 'auto',
-        userActions: {
-            hotkeys: function(event) {
-                // `this` is the player in this context
+    if(document.getElementById('video-js')){
+        let player = videojs('my-video', {
+            controls: true,
+            autoplay: false,
+            preload: 'auto',
+            userActions: {
+                hotkeys: function(event) {
+                    // `this` is the player in this context
 
-                // `x` key = pause
-                if (event.which === 88) {
-                    this.pause();
-                }
-                // `y` key = play
-                if (event.which === 89) {
-                    this.play();
+                    // `x` key = pause
+                    if (event.which === 88) {
+                        this.pause();
+                    }
+                    // `y` key = play
+                    if (event.which === 89) {
+                        this.play();
+                    }
                 }
             }
-        }
-    });
+        });
+    }
+
     //videojs(document.querySelector('.video-js'));
+
    /* $(function(){
         var $refreshButton = $('#refresh');
         var $results = $('#css_result');
